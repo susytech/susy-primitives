@@ -1,1 +1,0 @@
-{"rustc":8727041129544277308,"features":"[]","target":398493898044161140,"profile":9935990280773120926,"path":17855939697425512486,"deps":[["serde v1.0.91 (registry `https://github.com/susy-rust/susy.tech-index`)","serde",17785824462020789838]],"local":[{"Precalculated":"0.2.2"}],"rustflags":[],"edition":"Edition2015"}
