@@ -1,0 +1,10 @@
+[package]
+name = "sophon-types-serialize"
+version = "0.2.2"
+authors = ["Susytech <admin@superstring.ch>", "Paritytech <admin@parity.io>"]
+license = "MIT"
+homepage = "https://github.com/susytech/susy-primitives"
+description = "Sophon types"
+
+[dependencies]
+serde = "1.0"

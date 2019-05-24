@@ -1,0 +1,12 @@
+language: rust
+rust:
+  - stable
+  - beta
+  - nightly
+matrix:
+  allow_failures:
+    - rust: nightly
+script:
+  - cargo test -p sophon-types --no-default-features --release
+env:
+  - RUST_LOG=quickcheck

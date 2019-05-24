@@ -1,0 +1,27 @@
+[package]
+name = "sofbloom"
+version = "0.5.3"
+authors = ["Susytech <admin@superstring.ch>", "Paritytech <admin@parity.io>"]
+description = "Sophon bloom filter"
+license = "MIT"
+documentation = "https://docs.rs/sofbloom"
+homepage = "https://github.com/susytech/susy-primitives"
+repository = "https://github.com/susytech/susy-primitives"
+
+[dependencies]
+tiny-keccak = { version = "1.4", registry="susytech" }
+crunchy = { version = "0.1.6", features = ["limit_256"], registry="susytech" }
+fixed-hash = { version = "0.2", default_features = false ,registry="susytech"}
+sophon-types-serialize = { version = "0.2.2", registry="susytech", optional = true }
+serde = { version = "1.0", optional = true ,registry="susytech"}
+
+[dev-dependencies]
+rand = {version = "0.4" ,registry="susytech"}
+hex-literal = {version="0.1.1", registry="susytech"}
+rustc-hex = {version="1.0", registry="susytech"}
+
+[features]
+default = ["std", "heapsizeof", "serialize", "fixed-hash/libc"]
+std = ["fixed-hash/std"]
+heapsizeof = ["fixed-hash/heapsizeof"]
+serialize = ["std", "sophon-types-serialize", "serde"]

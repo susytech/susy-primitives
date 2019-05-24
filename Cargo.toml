@@ -1,0 +1,2 @@
+[workspace]
+members = ["sophon-types", "sofbloom"]
